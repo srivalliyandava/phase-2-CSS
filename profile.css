@@ -1,0 +1,148 @@
+
+body {
+  background: linear-gradient(to right, #ffe6f0, #e0f7fa);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+  color: #5a2a83;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 5px rgba(90, 42, 131, 0.3);
+  margin-top: 20px;
+}
+
+
+img {
+  display: block;
+  margin: 20px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #5a2a83;
+  box-shadow: 0 0 15px rgba(90, 42, 131, 0.4);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+
+.box0, .box1, .box2, .box3, .box4, .box5 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #cba8ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(120, 69, 173, 0.2);
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.box0:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
+  transform: translate(-5px);
+  box-shadow: 0 6px 15px rgba(90, 42, 131, 0.3);
+}
+
+
+h2 {
+  color: #4b0082;
+  text-align: center;
+  text-decoration: underline wavy #b266ff;
+  margin-bottom: 10px;
+
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f3e8ff;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-left: 6px solid #b266ff;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+ul li:hover {
+  background: #d9b3ff;
+}
+
+
+p {
+  width: 80%;
+  margin: 30px auto;
+  background: #fff7ff;
+  padding: 15px;
+  border-left: 5px solid #a04aff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(100, 0, 150, 0.1);
+  font-size: 1.1em;
+  text-align: center;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px auto;
+}
+
+button {
+  background: linear-gradient(45deg, #a04aff, #e070ff);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(160, 74, 255, 0.3);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(160, 74, 255, 0.4);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .box0, .box1, .box2, .box3, .box4, .box5, p {
+    width: 85%;
+    margin: 0px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    height: 50px;
+    width: 50%;
+    margin: auto;
+    padding: 2px;
+  }
+}

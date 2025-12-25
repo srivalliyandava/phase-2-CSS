@@ -1,0 +1,123 @@
+body{
+    font-family: sans-serif ;
+    background-color: #f9e4e4 ;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+form{
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px;
+    transition: transform 03s ease;
+    margin-top: auto;
+}
+form:hover{
+    transform: translateY(-5px);
+}
+fieldset{
+    border:2px solid #ffb3b3;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff5f5;
+}
+legend{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #d94f4f;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: left;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1.5px solid #ebe5e5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+transition: border 0.3s;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1.5px solid #ff6666;
+    outline: none;
+    box-shadow: 0 0 5px #ffb3b3;
+}
+ button{
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+    padding: 10px 10px;
+    background-color: #f4d3d3;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s, 0.3s;
+}
+button:hover{
+    background-color: #ee7575;
+    transform: scale(1.05);
+}
+
+.feedback-form { 
+    width: 450px;
+    margin: 50px;
+    padding: 20px;
+    background: #f9f9ff;
+    border-radius: 10px;
+    box-shadow: 10px;
+    font-family: sans-serif;
+}
+.feedback-form  h2 {
+text-align: center;
+color: #333;
+}
+ 
+.feedback-form input
+.feedback-form select
+.feedback-form textarea {
+    width: 100%;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.feedback-form button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background: #0056b3;
+}
+@media (max-width: 600px) {
+    form, .feedback-form { width: 90%; padding: 15px; }
+    input, select, textarea { width: 100%; }
+    button { width: 60%; }
+}
